@@ -6,3 +6,6 @@ def index(request):
 
 def paquetes(request):
     return render(request,'tourapp/paquetes.html')
+
+def productos(request):
+    return render(request,'tourapp/productos.html')
