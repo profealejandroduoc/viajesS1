@@ -1,0 +1,42 @@
+{% extends "tourapp/base.html" %}
+{% load static %}
+
+{% block contenido %}
+  
+   <div class="container">
+
+        <div class="row">
+            <div class="col-lg-4 mt-3">
+                <div class="card p-2 shadow " >
+                    <img class="card-img-top" src="{% static 'tourapp/img/chrnobyl.jpg' %} " alt="Chernobyl">
+                    <div class="card-body">
+                        <h4 class="card-title">Tour en Chernobyl</h4>
+                        <p class="card-text">Recorre la ciudad y recarga tu cuerpo de energía<br><br></p>
+                        <a href="detalles.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="card p-2 shadow " >
+                    <img class="card-img-top" src="{% static 'tourapp/img/komodo.jpg' %} " alt="Komodo">
+                    <div class="card-body">
+                        <h4 class="card-title">Granja Educativa Komodo</h4>
+                        <p class="card-text">Interactúa con estos tiernos animales<br><br></p>
+                        <a href="detalles.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-3">
+                <div class="card p-2 shadow ">
+                    <img class="card-img-top" src="{% static 'tourapp/img/ukrania.jpg' %} " alt="Ukrania">
+                    <div class="card-body">
+                        <h4 class="card-title">7 días en Ukrania</h4>
+                        <p class="card-text">Disfruta de actividades en las calles y sorprendete con los fuegos
+                            artificiales</p>
+                        <a href="detalles.html" class="btn btn-primary">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock contenido %}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes Paraiso</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/miscript.js"></script>
+    <link rel="stylesheet" href="css/estilologin.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <div class="container-fluid">
+            <img src="img/logo.png" alt="Logo" style="width:40px;" class="rounded-pill">
+            <a class="navbar-brand" href="index.html">Viajes Paradise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="paquetes.html">Paquetes Turísticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="compras.html">Mis Compras</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Administración</a>
+                        <div class="dropdown-menu bg-primary" aria-labelledby="dropdownId">
+                            <a class="dropdown-item drophovercustom" href="adminpaquetes.html">Paquetes</a>
+                            <a class="dropdown-item drophovercustom" href="admincompras.html">Compras</a>
+                            <a class="dropdown-item drophovercustom" href="adminusuarios.html">Usuarios</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <a href="login.html">
+                        <li class="nav-item text-light sesiontext">Usuario</li>
+                    </a>
+
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <div class="container"><!--main container-->
+        <div class="mt-5">
+           
+            <form action="login.html" method="post">
+                <div class="row">
+                    <div class="col-lg"></div>
+                    <div class="col-lg">
+                        <h1>Registro de Usuario</h1>
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" required class="form-control" id="email" placeholder="Ingrese email" name="email">
+                          </div>
+                          <div class="mb-3">
+                            <label for="pwd1" class="form-label">Password:</label>
+                            <input type="password" required class="form-control" id="pwd1" placeholder="Ingrese password" name="pswd1">
+                          </div>
+                          <div class="mb-3">
+                            <label for="pwd2" class="form-label">Reingrese Password:</label>
+                            <input type="password" required class="form-control" id="pwd2" placeholder="Resingrese password" name="pswd2">
+                          </div>
+                          <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre" name="nombre" >
+                          </div>
+                          <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" required class="form-control" id="apellido" placeholder="Ingrese apellido" name="apellido" >
+                          </div>
+                          <div>
+                            <label for="paises_latinoamerica" class="form-label">Seleccione País:</label>
+                            <select id="paises_latinoamerica" name="paises_latinoamerica" class="form-select">
+                                <option value="AR">Argentina</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BR">Brasil</option>
+                                <option value="CL" selected>Chile</option>
+                                <option value="CO">Colombia</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CU">Cuba</option>
+                                <option value="DO">República Dominicana</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="HN">Honduras</option>
+                                <option value="MX">México</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="PA">Panamá</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Perú</option>
+                                <option value="PR">Puerto Rico</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="VE">Venezuela</option>
+                            </select>
+                          </div>
+                          <div class="form-check mb-3">
+                            <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox" name="remember"> Desea recibir ofertas en su correo
+                          </div>
+                          <button type="submit" class="btn btn-primary" onclick="alerta()">Submit</button>
+                    </div>
+                    <div class="col-lg"></div>
+                </div>
+                
+              </form>
+
+
+            <!-- <div class="text-center mt-3">
+                <a href="forgot.html" class="nodecolink">¿Olvidaste tu contraseña?</a>
+                <br>
+                <a href="crearcuenta.html" class="nodecolink">Crear una cuenta</a>
+              
+            </div> -->
+        </div>
+
+
+
+
+    </div><!--main container ends-->
+
+
+    <script>
+        alert("hola mundo desde el html");
+    </script>
+</body>
+
+</html>
